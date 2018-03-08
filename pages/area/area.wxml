@@ -1,0 +1,44 @@
+<!-- <web-view src="https://www.baidu.com"></web-view>   -->
+
+<view>
+  area:
+</view>
+        <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell">
+                <view class="weui-cell__bd">标题文字</view>
+                <view class="weui-cell__ft">说明文字</view>
+            </view>
+        </view>
+
+
+<view wx:for="{{area}}">
+
+  <label>{{item.areaId}}</label>
+  <label>{{item.areaName}}</label>
+
+</view>
+
+<view class="container">
+  <view class="widget">
+    <text class="column">ID</text>
+    <text class="column">区域名</text>
+    <text class="column">优先级</text>
+    <text class="link-column">操作</text>
+  </view>
+  <scroll-view scroll-y="true">
+    <view>
+      <block wx:for="{{area}}">
+        <view class="widget">
+          <text class="column">{{item.areaId}} </text>
+          <text class="column">{{item.areaName}} </text>
+          <text class="column">{{item.priority}} </text>
+          <view class="link-column">
+            <navigator class="link" url="../operation/operation?areaId={{item.areaId}}">编辑</navigator>|
+            <text class='link' bindtap='deleteArea' data-areaid='{{item.areaId}}' data-areaname='{{item.areaName}}' data-index='{{index}}'>删除</text>
+          </view>
+        </view>
+      </block>
+    </view>
+  </scroll-view>
+  <button type="primary" bindtap='addArea'>添加区域</button>
+</view>

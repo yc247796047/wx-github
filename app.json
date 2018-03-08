@@ -1,0 +1,19 @@
+{
+  "pages":[
+    "pages/home/home",
+    "pages/detail/detail",
+    "pages/github/github",
+    "pages/bio/bio",
+    "pages/name/name",
+    "pages/test/test",
+    "pages/area/area",
+    "pages/operation/operation"
+    
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "GitHub",
+    "navigationBarTextStyle":"white"
+  }
+}

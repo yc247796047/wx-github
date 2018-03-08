@@ -1,0 +1,21 @@
+/* pages/home/home.wxss */
+input{
+  justify-content: center;
+  display: flex;
+  padding-left: 190rpx;
+}
+.icon{
+  height: 620rpx;
+}
+ image{
+  height: 100%;
+  width: 100%;
+}
+text{
+   display: block; 
+   padding: 20rpx 30rpx; 
+   border: 2rpx solid #00f; 
+  margin-bottom: 10rpx;
+  box-shadow: 0rpx 10rpx chocolate inset;
+  border-radius: 16rpx;
+}

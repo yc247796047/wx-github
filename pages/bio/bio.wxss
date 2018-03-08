@@ -1,0 +1,8 @@
+text{
+  display: block;
+  border: 2rpx solid chocolate;
+  justify-content: center;
+  margin: 100rpx auto;
+  padding: 23rpx 16rpx;
+  box-shadow: 0rpx 20rpx cadetblue inset;
+}

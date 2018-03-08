@@ -1,0 +1,40 @@
+  <!-- <web-view src="https://www.baidu.com"></web-view>   -->
+
+  <view>
+  {{code}}
+  </view>
+
+    <view>
+  {{data.data.list[0].country}}
+  </view>
+
+  <view wx:for="{{data.data.list}}">
+  {{index}}: {{item.country}}
+</view>
+
+
+
+  <view wx:for="{{data.data.list}}">
+<button open-type="contact">{{item.country}}</button>
+</view>
+
+
+<view>
+当前位置：
+{{latitude}},
+{{longitude}}
+</view>
+
+<view>
+当前位置距离途家 {{stujia}}km
+</view>
+
+<view wx:if="{{stujia*1000 > 1000}}"> 不在途家打卡区内 </view>
+<view wx:else> 记得打卡  </view>
+
+<view>
+当前位置距离大鱼 {{sdayu}}km
+</view>
+
+<view wx:if="{{sdayu*1000 > 1000}}"> 不在大鱼打卡区内 </view>
+<view wx:else> 记得打卡  </view>

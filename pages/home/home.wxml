@@ -1,0 +1,30 @@
+<view>
+<input placeholder='请输入GitHub' bindchange='search'></input>
+<!-- auto-focus -->
+</view>
+<view class='icon'>
+<image src='{{github.avatar_url}}' mode='aspectFit'></image>
+</view>
+<view>
+<navigator url='../test/test'>
+<text>test</text>
+</navigator>
+<navigator url='../area/area'>
+<text>area</text>
+</navigator>
+<navigator url='../name/name?type={{github.name}}'>
+<text>名字：{{github.name}}</text>
+</navigator>
+  <navigator url='../detail/detail?type={{github.blog}}'> 
+    <text>博客：{{github.blog}}</text>
+  </navigator>
+  <navigator url='../github/github?type={{values}}'>
+  <text>项目：{{github.public_repos}}</text>
+  <!-- <text>项目：{{values}}</text> -->
+  </navigator>
+    <navigator url='../bio/bio?type={{github.bio}}'> 
+    <text>个人简历</text>
+  </navigator>
+<text>创建时间：{{github.created_at}}</text>
+<text>更新时间：{{github.updated_at}}</text>
+</view>

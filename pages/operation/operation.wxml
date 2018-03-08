@@ -1,0 +1,55 @@
+<!-- <web-view src="https://www.baidu.com"></web-view>   -->
+<form bindsubmit='formSubmit' bindreset='formReset'>
+  <view class="row">
+    <text></text>
+    <input type='text' name='areaId' value='{{area.areaId}}' style='display:none'></input>
+  </view>
+  <view class="weui-cells weui-cells_after-title">
+    <view class="weui-cell weui-cell_input">
+      <view class="weui-cell__hd">
+        <view class="weui-label">区域名</view>
+      </view>
+      <view class="weui-cell__bd">
+        <input class="weui-input" type='text' name='areaName' placeholder='请输入区域名' value='{{area.areaName}}'></input>
+      </view>
+    </view>
+  </view>
+  <view class="weui-cells weui-cells_after-title">
+    <view class="weui-cell weui-cell_input">
+      <view class="weui-cell__hd">
+        <view class="weui-label">优先级</view>
+      </view>
+      <view class="weui-cell__bd">
+        <input class="weui-input" type='text' name='priority' placeholder='请输入优先级' value='{{area.priority}}'></input>
+      </view>
+    </view>
+  </view>
+
+  <button class="weui-btn" type="primary" form-type='submit'>提交</button>
+                      <button class="weui-btn" type="default" form-type='reset'>清空</button>
+</form>
+
+<!-- <view class="container">
+  <form bindsubmit='formSubmit' bindreset='formReset'>
+    <view class="row">
+      <text>id：{{area.areaId}}</text>
+      <input type='text' name='areaId' value='{{area.areaId}}' style='display:none'></input>
+    </view>
+    <view class="row">
+      <text>区域名：</text>
+      <input type='text' name='areaName' placeholder='请输入区域名' value='{{area.areaName}}'></input>
+    </view>
+    <view class="row">
+      <text>优先级：</text>
+      <input type='text' name='priority' placeholder='请输入优先级' value='{{area.priority}}'></input>
+    </view>
+
+    <view class="row">
+      <button type='primary' form-type='submit'>提交</button>
+              <button class="weui-btn" type="primary" form-type='submit'>提交</button>
+                      <button class="weui-btn" type="default" form-type='reset'>清空</button>
+
+    </view>
+  </form>
+
+</view> -->
